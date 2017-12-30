@@ -3,6 +3,10 @@
     "description": "A TV commercial",
     "type": "object",
     "properties":{
+        "name": {
+            "description": "unique id of the commercial",
+            "type": "string"
+        },
         "title": {
             "description": "title of the commercial",
             "type": "string"
@@ -11,9 +15,9 @@
             "description": "url to the video",
             "type": "string"
         },
-        "date": {
+        "year": {
             "description": "date when the commercial was aired",
-            "type": "string"
+            "type": "integer"
         },
         "tags": {
             "type": "array",
@@ -91,5 +95,5 @@
             }
         }
     },
-    "required": ["name", "date"]
+    "required": ["name", "year"]
 }
