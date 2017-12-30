@@ -76,5 +76,5 @@
             }
         }
     },
-    "required": ["name", "date"],
+    "required": ["name", "date"]
 }
