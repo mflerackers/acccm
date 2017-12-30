@@ -45,37 +45,43 @@
             "uniqueItems": true
         },
         "scenes": {
-            "type": "object",
-            "properties": {
-                "name": {
-                    "type": "string"
-                },
-                "tags": {
-                    "type": "array",
-                    "items": {
+            "type": "array",
+            "items": {
+                "properties": {
+                    "name": {
                         "type": "string"
                     },
-                    "minItems": 1,
-                    "uniqueItems": true
+                    "tags": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "minItems": 1,
+                        "uniqueItems": true
+                    }
                 }
-            }
+            },
+            "minItems": 1,
+            "uniqueItems": true
         },
         "relationships": {
-            "type": "object",
-            "properties": {
-                "from": {
-                    "type": "string"
-                },
-                "to": {
-                    "type": "string"
-                },
-                "tags": {
-                    "type": "array",
-                    "items": {
+            "type": "array",
+            "items": {
+                "properties": {
+                    "from": {
                         "type": "string"
                     },
-                    "minItems": 1,
-                    "uniqueItems": true
+                    "to": {
+                        "type": "string"
+                    },
+                    "tags": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "minItems": 1,
+                        "uniqueItems": true
+                    }
                 }
             }
         }
