@@ -1,10 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Commercial",
     "description": "A TV commercial",
     "type": "object",
     "properties":{
-        "name": {
+        "title": {
             "description": "title of the commercial",
             "type": "string"
         },
