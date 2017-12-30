@@ -27,6 +27,7 @@
         "people": {
             "type": "array",
             "items": {
+                "type": "object",
                 "properties": {
                     "name": {
                         "type": "string"
@@ -39,7 +40,8 @@
                         "minItems": 1,
                         "uniqueItems": true
                     }
-                }
+                },
+                "required": ["name", "tags"]
             },
             "minItems": 1,
             "uniqueItems": true
@@ -47,6 +49,7 @@
         "scenes": {
             "type": "array",
             "items": {
+                "type": "object",
                 "properties": {
                     "name": {
                         "type": "string"
@@ -59,7 +62,8 @@
                         "minItems": 1,
                         "uniqueItems": true
                     }
-                }
+                },
+                "required": ["name", "tags"]
             },
             "minItems": 1,
             "uniqueItems": true
@@ -67,6 +71,7 @@
         "relationships": {
             "type": "array",
             "items": {
+                "type": "object",
                 "properties": {
                     "from": {
                         "type": "string"
@@ -82,7 +87,8 @@
                         "minItems": 1,
                         "uniqueItems": true
                     }
-                }
+                },
+                "required": ["from", "to", "tags"]
             }
         }
     },
